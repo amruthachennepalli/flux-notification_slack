@@ -9,7 +9,7 @@ spec:
   interval: 5s
   path: ./apps/base
   prune: true
-  timeout: 3m0s
+  timeout: 1m0s
   sourceRef:
     kind: GitRepository
     name: flux-system 
