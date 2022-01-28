@@ -12,12 +12,12 @@ spec:
     kind: GitRepository
     name: flux-system 
   env:
-   -name: JOOMLA_USERNAME
+   -name: MYSQL_USERNAME
     valueFrom: 
     secretKeyRef:
       name: basic-auth
       key: user
-   -name: JOOMLA_PASSWORD
+   -name: MYSQL_PASSWORD
     valueFrom: 
     secretKeyRef:
       name: basic-auth
