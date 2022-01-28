@@ -13,4 +13,15 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system 
+  env:
+   -name: JOOMLA_USERNAME
+    valueFrom: 
+    secretKeyRef:
+      name: basic-auth
+      key: user
+   -name: JOOMLA_PASSWORD
+    valueFrom: 
+    secretKeyRef:
+      name: basic-auth
+      key: password  
  
