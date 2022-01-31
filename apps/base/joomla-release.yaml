@@ -12,15 +12,11 @@ spec:
         name: bitnami
 
       env:
-        -name: JOOMLA_USERNAME
+        -name: JOOMLA_CREDS
         valueFrom: 
         secretKeyRef:
           name: basic-auth
           key: user
-        -name: JOOMLA_PASSWORD
-        valueFrom: 
-        secretKeyRef:
-          name: basic-auth
           key: password
       releaseName: joomla
   interval: 1m0s      
