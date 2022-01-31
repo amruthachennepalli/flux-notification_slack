@@ -4,14 +4,14 @@ metadata:
   name: joomla
   namespace: flux-system
 spec:
-  chart: []
-    spec: []
+  chart: 
+    spec: 
       chart: joomla
       sourceRef:
         kind: HelmRepository
         name: bitnami   
   interval: 1m0s 
-        env: []
+        env: 
           - name: SECRET_USERNAME
             valueFrom:
               secretKeyRef:
