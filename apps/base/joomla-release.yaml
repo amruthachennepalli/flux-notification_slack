@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: bitnami
     interval: 1m0s        
-  env:
+  env:[]
    -name: JOOMLA_USERNAME
     valueFrom: 
     secretKeyRef:
