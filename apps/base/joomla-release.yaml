@@ -15,10 +15,10 @@ spec:
         - name: SECRET_USERNAME
           valueFrom:
             secretKeyRef:
-              name: mysecret
+              name: basic-auth
               key: username
         - name: SECRET_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: mysecret
+              name: basic-auth
               key: password  
