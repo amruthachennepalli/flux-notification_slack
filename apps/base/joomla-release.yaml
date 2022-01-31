@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   chart:
-    spec:
+    spec: []
       chart: joomla
       sourceRef:
         kind: HelmRepository
