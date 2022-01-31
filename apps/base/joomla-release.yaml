@@ -4,7 +4,7 @@ metadata:
   name: joomla
   namespace: flux-system
 spec:
-  chart:
+  chart: []
     spec: []
       chart: joomla
       sourceRef:
