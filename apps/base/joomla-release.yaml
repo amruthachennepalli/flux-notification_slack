@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: bitnami
-      env:
+      env: []
         - name: SECRET_USERNAME
           valueFrom:
             secretKeyRef:
