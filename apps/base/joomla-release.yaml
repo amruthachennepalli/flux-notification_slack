@@ -11,11 +11,11 @@ spec:
         kind: HelmRepository
         name: bitnami   
   interval: 1m0s 
-    volumeMounts:
+      volumeMounts:
+      - name: basic-auth
+        mountPath: "/etc/basic-auth"
+        readOnly: true
+    volumes:
     - name: basic-auth
-      mountPath: "/etc/basic-auth"
-      readOnly: true
-  volumes:
-  - name: basic-auth
-    secret:
-      secretName: basic-auth
+      secret:
+        secretName: basic-auth
