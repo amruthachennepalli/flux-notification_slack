@@ -12,12 +12,12 @@ spec:
         name: bitnami   
   interval: 1m0s 
       env: 
-        - name: SECRET_USERNAME
+        - name: JOOMLA_USERNAME
           valueFrom:
             secretKeyRef:
               name: basic-auth
-              key: username
-        - name: SECRET_PASSWORD
+              key: user
+        - name: JOOMLA_PASSWORD
           valueFrom:
             secretKeyRef:
               name: basic-auth
