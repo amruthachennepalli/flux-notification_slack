@@ -11,14 +11,14 @@ spec:
         kind: HelmRepository
         name: bitnami   
   interval: 1m0s 
-  env: []
-    - name: SECRET_USERNAME
-      valueFrom:
-        secretKeyRef:
-          name: mysecret
-          key: username
-    - name: SECRET_PASSWORD
-      valueFrom:
-        secretKeyRef:
-          name: mysecret
-          key: password   
+env: []
+  - name: SECRET_USERNAME
+    valueFrom:
+      secretKeyRef:
+        name: mysecret
+        key: username
+  - name: SECRET_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: mysecret
+        key: password   
