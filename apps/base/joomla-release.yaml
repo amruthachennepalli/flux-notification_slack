@@ -11,19 +11,4 @@ spec:
         kind: HelmRepository
         name: bitnami   
   interval: 1m0s 
-  values:
-    env:
-     -name: JOOMLA_USERNAME
-      valueFrom: 
-      secretKeyRef:
-        kind: secret
-        name: basic-auth
-        key: user
-     -name: JOOMLA_PASSWORD
-      valueFrom: 
-      secretKeyRef:
-        kind: secret
-        name: basic-auth
-        key: password
-    releaseName: joomla
-  
+
