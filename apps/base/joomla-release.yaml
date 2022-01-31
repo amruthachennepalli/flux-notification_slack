@@ -16,7 +16,7 @@ spec:
         valueFrom: 
         secretKeyRef:
           name: basic-auth
-          key: user
+          key1: user
           key: password
       releaseName: joomla
   interval: 1m0s      
