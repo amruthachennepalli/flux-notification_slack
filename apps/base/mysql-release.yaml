@@ -1,12 +1,12 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: mysql
+  name: joomla
   namespace: flux-system
 spec:
   chart:
     spec:
-      chart: mysql
+      chart: joomla
       sourceRef:
         kind: HelmRepository
         name: bitnami
@@ -22,4 +22,4 @@ spec:
     secretKeyRef:
       name: basic-auth
       key: password
-  releaseName: mysql
+  releaseName: joomla
